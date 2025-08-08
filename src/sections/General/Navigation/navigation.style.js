@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const NavigationWrap = styled.header`
   width: 100vw;
+  position: sticky;
   z-index: 9999;
   top: 0;
   background-color: ${(props) => props.theme.body};
@@ -646,6 +647,10 @@ const NavigationWrap = styled.header`
     }
     .mobile-sub-menu-item {
       font-size: 1.1rem;
+    }
+    .mobile-nested-menu {
+       font-size: 1.1rem;
+       margin-left: 1rem;
     }
   }
 

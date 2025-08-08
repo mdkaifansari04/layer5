@@ -22,7 +22,7 @@ h2, h5{
     display: block;
     overflow-x: scroll;
     overflow-y:hidden;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.6s cubic-bezier(0.5, 1);
 }
 .price-table {
     width: 100%;
@@ -31,14 +31,14 @@ h2, h5{
 }
 .price-table tr:not(:last-child) {
     border-bottom: 1px solid ${props => props.theme.whiteZeroThreeToBlackZeroThree};
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.6s cubic-bezier(0.5, 1);
 }
 .price-table tr td {
     border-left: 1px solid ${props => props.theme.whiteZeroFiveToBlackZeroFive};
     padding: 0rem 2rem;
     font-size: 1rem;
     vertical-align: middle;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.6s cubic-bezier(0.5, 1);
 
     h5 {
       display: flex;
@@ -61,7 +61,7 @@ h2, h5{
 
 .price-table tr:hover {
     background-color: ${props => props.theme.secondaryLightColor};
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.6s cubic-bezier(0.5, 1);
 }
 .price-table .fa-check {
     color: #5336ca;
@@ -72,7 +72,7 @@ h2, h5{
 
 /* Highlighted column */
 
-.price-table tr td:nth-child(3) {
+.price-table tr td:nth-child(5) {
     background: rgba(0,179,159,0.1);
     padding: 8px 48px;
 }
@@ -114,7 +114,7 @@ h2, h5{
 .price-table .price-blank {
     background-color: ${props => props.theme.secondaryDarkColor};
     border: 0 none;
-    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    transition: 0.6s cubic-bezier(0.5, 1);
 }
 
 .category {
@@ -203,9 +203,9 @@ const Comparison = () => {
               <tr>
                 <th className="price-blank"></th>
                 <th className="price-blank"></th>
+                <th className="price-blank"></th>
+                <th className="price-blank"></th>
                 <th className="price-table-popular">Most popular</th>
-                <th className="price-blank"></th>
-                <th className="price-blank"></th>
               </tr>
               <tr className="price-table-head">
                 <td></td>
